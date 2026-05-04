@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gsugar Customer Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="public-site">
+  <div class="page-shell">
+    <nav class="topbar">
+      <div class="brand-wrap">
+        <span class="brand-mark">G</span>
+        <div>
+          <p class="brand-name">Gsugar</p>
+          <p class="brand-tag">Customer login</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <a class="btn btn-outline" href="index.html#sweets">Back to sweets</a>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="section-intro">
+        <span class="section-label">Order lookup</span>
+        <h2>Enter your email to view orders</h2>
+        <p>Use the same email you provided at checkout. If no orders are found, you can return to the sweets collection.</p>
+      </div>
+      <div class="form-panel">
+        <form id="customerLoginForm">
+          <label>Email<span> *</span>
+            <input type="email" id="loginEmailInput" placeholder="you@example.com" required />
+          </label>
+          <button class="btn btn-primary" type="submit">View orders</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="userOrdersSection" class="section hidden">
+      <div class="section-intro">
+        <span class="section-label">My Orders</span>
+        <h2>Order status</h2>
+        <p>We keep your order history available here for as long as it remains stored in the browser.</p>
+      </div>
+      <div class="status-panel" id="userOrdersPanel"></div>
+    </section>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
