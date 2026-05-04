@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: gsugar-order-portal
+    env: node
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    root: .

@@ -31,7 +31,7 @@
 
 const storageKey = 'gsugarOrders';
 const companyEmail = '007140@gsal.org.uk';
-const apiBaseUrl = 'http://localhost:3000/api';
+const apiBaseUrl = '/api';
 const statusMap = {
   email: 'Email with details sent [check inbox]',
   processing: 'Processing',

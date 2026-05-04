@@ -1,5 +1,5 @@
 const storageKey = 'gsugarOrders';
-const apiBaseUrl = 'http://localhost:3000/api';
+const apiBaseUrl = '/api';
 const statusMap = {
   email: 'Email with details sent [check inbox]',
   processing: 'Processing',
