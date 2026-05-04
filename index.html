@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gsugar Shop - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="public-site">
+  <div class="page-shell">
+    <div class="page-action">
+      <button class="btn btn-secondary" id="customerLoginBtn">View Orders</button>
+    </div>
+
+    <header class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">THE DIGITAL CONFECTIONARY</span>
+        <h1>GSUGAR</h1>
+        <a href="#sweets" class="btn btn-primary">Our Sweet Selection</a>
+      </div>
+    </header>
+
+    <section id="sweets" class="section sweets-section">
+      <div class="section-intro">
+        <span class="section-label">Our Sweets</span>
+        <h2>Our Hand Picked Selection of Classics</h2>
+        <p>Browse and add your favourites from the selection to your bag or request an off menu sweet below.</p>
+      </div>
+      <div class="card-grid" id="productGrid"></div>
+    </section>
+
+    <section class="section custom-section">
+      <div class="section-intro">
+        <span class="section-label">Custom Order</span>
+        <h2>Add Your Own Off-Menu Sweet</h2>
+        <p>Tell us what you'd like for only £5.00 to access an exclusive custom order.</p>
+      </div>
+      <div class="form-panel">
+        <form id="customOrderForm">
+          <label>Sweet Name<span> *</span>
+            <input type="text" id="customSweetName" placeholder="E.g. Wine Gums" required />
+          </label>
+          <label>Description<span> *</span>
+            <textarea id="customSweetDescription" placeholder="Chocolate/Sweet? Describe packaging details." required></textarea>
+          </label>
+          <button class="btn btn-secondary" type="submit">Add to Bag</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section bag-section">
+      <div class="section-intro">
+        <span class="section-label">Your Bag</span>
+        <h2>Review your selection</h2>
+        <p>Confirm your sweets, then fill in your details to complete the order.</p>
+      </div>
+      <div class="bag-panel">
+        <div class="bag-items" id="bagItems">
+          <p class="empty-note">Your bag is empty. Add sweets from the menu above.</p>
+        </div>
+        <div class="bag-summary">
+          <div class="summary-card">
+            <h3>Bag total</h3>
+            <p class="total-amount" id="bagTotal">£0.00</p>
+          </div>
+          <form id="checkoutForm">
+            <label>Full Name<span> *</span>
+              <input type="text" id="customerName" placeholder="Your name" required />
+            </label>
+            <label>Email<span> *</span>
+              <input type="email" id="customerEmail" placeholder="gsugar@example.com" required />
+            </label>
+            <p class="order-note">Order details will be sent directly to our admins at <strong>007140@gsal.org.uk</strong>, and we will personally email you payment and collection instructions.</p>
+            <button class="btn btn-primary" type="submit">Place Order</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <a href="login.html" class="scroll-profile-btn" id="scrollProfileBtn" aria-label="Customer login">👤</a>
+
+  <div class="popup" id="thankYouPopup" aria-hidden="true">
+    <div class="popup-panel">
+      <button class="close-popup" id="closePopup">×</button>
+      <h2>Thank you for your order!</h2>
+      <p>Your order has been sent to our admins. We will personally email you payment and collection details shortly. <a href="login.html">View order status</a>.</p>
+      <button class="btn btn-secondary" id="popupOk">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

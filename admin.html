@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gsugar Company Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="admin-portal">
+  <div class="page-shell">
+    <main>
+      <section class="section">
+        <div class="section-intro">
+          <span class="section-label">Admin portal</span>
+          <h2>Company order management</h2>
+          <p>Manage customer orders securely. Only authenticated admins can access this page.</p>
+          <button class="btn btn-outline" id="adminLogoutBtn">Logout</button>
+        </div>
+
+        <div class="admin-settings">
+          <label>Pickup date / time<span> *</span>
+            <input type="text" id="pickupSlot" required />
+          </label>
+          <label>Location<span> *</span>
+            <input type="text" id="pickupLocation" required />
+          </label>
+          <button id="savePickupSettings" class="btn btn-primary" type="button">Save pickup details</button>
+        </div>
+
+        <div class="admin-orders" id="adminOrdersList">
+          <p class="empty-note">Loading active orders...</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
